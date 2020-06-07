@@ -1,10 +1,13 @@
-import telebot
-from telebot import types
-from weather_api import request_forecast
-import schedule  # https://pypi.org/project/schedule/
+import os
 import time
 
-bot = telebot.TeleBot('bot_app_id')
+import schedule  # https://pypi.org/project/schedule/
+import telebot
+from telebot import types
+
+from weather_api import request_forecast
+
+bot = telebot.TeleBot(os.environ.get('bot_app_id'))
 chaat_id = 571618656
 
 city_id = 625144

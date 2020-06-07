@@ -2,7 +2,9 @@
 
 import os
 import sys
+
 import requests
+
 # полученный при регистрации на OpenWeatherMap.org.
 # Что-то вроде такого набора букв и цифр: "6d8e495ca73d5bbc1d6bf8ebd52c4123"
 
